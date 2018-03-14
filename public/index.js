@@ -2,7 +2,7 @@ $().ready(()=>{
   $("#sendBtn").on("click", ()=>{
     $("#sendBtn").val("sending");
     $.get(
-      "https://young-fortress-10948.herokuapp.com/sendsms",
+      "https://dry-fjord-78842.herokuapp.com/sendsms",
       {msg: $("#msg").val()},
     ).done(function( data ) {
       if(data == "message not sent"){
